@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		301B8C7E248F54DE00EE071A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301B8C7D248F54DE00EE071A /* AppDelegate.swift */; };
-		301B8C82248F54DE00EE071A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301B8C81248F54DE00EE071A /* ViewController.swift */; };
 		301B8C85248F54DE00EE071A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 301B8C83248F54DE00EE071A /* Main.storyboard */; };
 		301B8C87248F54DF00EE071A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 301B8C86248F54DF00EE071A /* Assets.xcassets */; };
 		301B8C8A248F54DF00EE071A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 301B8C88248F54DF00EE071A /* LaunchScreen.storyboard */; };
@@ -17,7 +16,6 @@
 /* Begin PBXFileReference section */
 		301B8C7A248F54DE00EE071A /* DYZB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYZB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		301B8C7D248F54DE00EE071A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		301B8C81248F54DE00EE071A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		301B8C84248F54DE00EE071A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		301B8C86248F54DF00EE071A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		301B8C89248F54DF00EE071A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,14 +52,69 @@
 		301B8C7C248F54DE00EE071A /* DYZB */ = {
 			isa = PBXGroup;
 			children = (
+				301B8C91248F6DE100EE071A /* Classes */,
 				301B8C7D248F54DE00EE071A /* AppDelegate.swift */,
-				301B8C81248F54DE00EE071A /* ViewController.swift */,
 				301B8C83248F54DE00EE071A /* Main.storyboard */,
 				301B8C86248F54DF00EE071A /* Assets.xcassets */,
 				301B8C88248F54DF00EE071A /* LaunchScreen.storyboard */,
 				301B8C8B248F54DF00EE071A /* Info.plist */,
 			);
 			path = DYZB;
+			sourceTree = "<group>";
+		};
+		301B8C91248F6DE100EE071A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				301B8C97248F6DE100EE071A /* Main */,
+				301B8C92248F6DE100EE071A /* Home */,
+				301B8C96248F6DE100EE071A /* Live */,
+				301B8C94248F6DE100EE071A /* Follow */,
+				301B8C95248F6DE100EE071A /* Profile */,
+				301B8C93248F6DE100EE071A /* Tools */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		301B8C92248F6DE100EE071A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		301B8C93248F6DE100EE071A /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		301B8C94248F6DE100EE071A /* Follow */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Follow;
+			sourceTree = "<group>";
+		};
+		301B8C95248F6DE100EE071A /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		301B8C96248F6DE100EE071A /* Live */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		301B8C97248F6DE100EE071A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +188,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				301B8C82248F54DE00EE071A /* ViewController.swift in Sources */,
 				301B8C7E248F54DE00EE071A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +335,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2GW79Z6FB4;
 				INFOPLIST_FILE = DYZB/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -290,7 +343,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yuels.iphoneapp.DYZB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -301,6 +354,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2GW79Z6FB4;
 				INFOPLIST_FILE = DYZB/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +362,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yuels.iphoneapp.DYZB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
